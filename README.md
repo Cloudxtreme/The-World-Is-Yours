@@ -1,15 +1,12 @@
 # Nginx L7 DDoS Protection! :boom: :zap:
 *(Please Read Whole Page, All Things Are Important Then If You Want You Can Use IT.)*
 
-During the installation maybe it can fail, please create one issue if it happen. The reason can be maybe if your system is 32bit only, because i have test this script only with 64bit. 
-
-Another reason can be missing packages from your repository. if so please for Ubuntu 14.04 change your repo to [THIS](https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/eu-repo) .
-
 # To-Do
 
 - [x] Nginx Version, Always Latest.
 - [x] Support Ubuntu Trusty. (14.04)
 - [x] Support Ubuntu Xenial. (16.04)
+- [x] Support Ubuntu Cosmic. (18.10)
 - [ ] Support Debian.
 - [ ] Support Centos.
 - [x] Support Arch Linux.
@@ -20,11 +17,12 @@ Another reason can be missing packages from your repository. if so please for Ub
 - [x] Integrate Fail2Ban > IpTables.
 - [ ] GUI ?
 - [ ] Monitor requests in live time from browser.
+- [ ] L7 Protection (TestCookie Module) Add Recaptcha!
 - [ ] .....
 
 # Installation
 
-1. **`apt-get install build-essential libssl-dev curl nano wget zip unzip sudo git -y`**
+1. **`apt-get install build-essential libssl-dev curl nano wget zip unzip sudo git psmisc -y`**
 
 2. **`git clone https://github.com/theraw/The-World-Is-Yours.git`**
 
@@ -119,3 +117,7 @@ Test it!
 The **L7 Protection** is the same way which **cloudflare** have that banner "Under Attack" A.K.A Cookie based authorization. Most of bots from where attacks will come doesn't support cookies so it will fail to access your site. (Test it by yourself to "curl http://yoursite.com" before you activate L7 and after you start L7 so you will understand better.)
 
 The L7 protection is a good thing for your protection. But a very bad thing for your website seo!, As facebook/google/bing and all search engines will not be able to access your website anymore. There is a way to allow them but if you have 1 year free time to find all their ips go and try it. I've been thinking for a "reverse dns" whitelist but haven't done it so as of now it is like this.
+
+# Contributors
+
+Feel free to pull request or do a suggestion..
